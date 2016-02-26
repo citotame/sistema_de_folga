@@ -1,3 +1,31 @@
+.background {
+    display: block;
+	position: relative;
+	z-index: 0;
+    background-image: url('../maxresdefault.jpg');
+	background-size: 100%;
+    height: 100%;
+}
+
+.background::after {
+    content: '';
+	display: inline-block;
+	position: absolute;
+	z-index: 0;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background-color: rgba(0,0,0,0.55);
+}
+.container:first-child {
+	padding-top: 10%;
+}
+
+.container:last-child {
+	padding-bottom: 10%;
+}
+
 .login {
     padding: 10px;
     margin-top: 500px;
@@ -5,4 +33,5 @@
     border-radius: 10px;
 	box-shadow: 0 0 10.4em -.1em rgba(0,0,0,0.55);
 	background: rgba(255,255,255,1);
+    z-index: 1;
 }
