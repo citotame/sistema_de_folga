@@ -10,27 +10,27 @@
   <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body>
-    <div class="background">
-      <div class="container ui three column centered grid ">
-        <div class="row">
-            <div class="login column">
-                <img src="logo1.png" />
-                <form class="ui form" method="POST" action="Acme/Classes/login.php">
-                    <div class="field">
-                        <label for="login">Usuario: </label>
-                        <input id="login" name="login" type="text" placeholder="Usuario" />
-                    </div>
-                    <div class="field">
-                        <label for="senha">Senha: </label>
-                        <input id="senha" name="senha" type="password" placeholder="Senha" />
-                    </div>
-                    <div class="field">
-                        <button class="ui orange button">Entrar</button>
-                    </div>
-                </form>
+  <div class="background">
+    <div class="container ui three column centered grid ">
+      <div class="row">
+        <div class="login column">
+          <img src="logo1.png" />
+          <form class="ui form" method="POST" action="Acme/Classes/login.php">
+            <div class="field">
+              <label for="login">Usuario: </label>
+              <input id="login" name="login" type="text" placeholder="Usuario" />
             </div>
+            <div class="field">
+              <label for="senha">Senha: </label>
+              <input id="senha" name="senha" type="password" placeholder="Senha" />
+            </div>
+            <div class="field">
+              <button class="ui orange button">Entrar</button>
+            </div>
+          </form>
         </div>
+      </div>
     </div>
-</div>
+  </div>
 </body>
 </html>
