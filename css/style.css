@@ -3,8 +3,13 @@
 	position: relative;
 	z-index: 0;
 	background-image: url('../maxresdefault1.jpg');
-	background-size: 100%;
+    background-position: center center;
+	background-repeat: no-repeat;
+    background-attachment: fixed;
+	background-size: cover;
+    background-color: #999;
 	height: 100%;
+	min-height: 100%;
 }
 
 .background::after {
@@ -14,12 +19,17 @@
 	z-index: 0;
 	top: 0;
 	right: 0;
-		bottom: 0;
+	bottom: 0;
 	left: 0;
 	background-color: rgba(0,0,0,0.65);
 }
-.container:first-child {
-	padding-top: 10%;
+
+.vertical-center {
+  min-height: 100%;  /* Fallback for browsers do NOT support vh unit */
+  min-height: 100vh; /* These two lines are counted as one :-)       */
+
+  display: flex;
+  align-items: center;
 }
 
 .login {
@@ -29,5 +39,28 @@
 	border-radius: 10px;
 	box-shadow: 0 0 10.4em -.1em rgba(0,0,0,0.55);
 	background: rgba(255,255,255,1);
-	z-index: 1; 
+	z-index: 1;
+}
+
+@media screen and (max-width: 1024px) {
+    .login {
+        width: 50vw !important;
+        height: 50vh !important;        
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .login {
+        width: 80vw !important;
+        height: 90vh !important;
+        margin-left: auto !important;
+        margin-right: auto !important;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .login {
+        width: 90vw !important;
+        height: 90vh !important;
+    }
 }

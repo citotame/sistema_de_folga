@@ -1,17 +1,17 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-  <title>Sistema de folgas</title>
+  <title>Sistema de Estoque</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0" />
   <meta name="author" content="Rafael Dimas">
-  <meta name="description" content="Sistema de folgas, Domino's Pizza Ribeirão Preto'"/>
+  <meta name="description" content="Sistema de Estoque, Domino's Pizza Ribeirão Preto'"/>
   <link rel="stylesheet" type="text/css" href="bower_components/semantic/dist/semantic.css">
   <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body>
-  <div class="background">
-    <div class="container ui three column centered grid ">
+  <div class="background vertical-center">
+    <div class="container ui three column centered grid">
       <div class="row">
         <div class="login column">
           <img src="logo1.png" />
